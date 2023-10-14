@@ -1,0 +1,23 @@
+{
+  "name": "universal",
+  "version": "1.0.0",
+  "description": "Template.",
+  "main": "dist/node.js",
+  "broswer": "dist/broswer.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npm run compatiable && npm run browserify",
+    "compatiable": "babel src/lib.js --out-file dist/node.js",
+    "browserify": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

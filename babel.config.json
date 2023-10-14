@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-modules-umd",
+      {
+        "exactGlobals": true,
+        "moduleId": "myModule" // Needed to be change
+      }
+    ]
+  ]
+}
